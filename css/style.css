@@ -13,8 +13,9 @@ header {
   left: 0;
   height: 100px;
   width: 100%;
-  background-color: yellow;
+  background-color: dimgrey;
   margin-left: 229px;
+  opacity: 0.7;
 }
 
 /* regole main */
