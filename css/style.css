@@ -6,16 +6,29 @@
   border: 1px solid black;
 }
 
+body {
+  background-color: black;
+}
+
 /* regole header */
 header {
   position: fixed;
   top: 0;
   left: 0;
-  height: 100px;
+  height: 90px;
   width: 100%;
-  background-color: dimgrey;
+  background-color: rgb(12, 15, 20);
   margin-left: 229px;
   opacity: 0.7;
+  color: white;
+}
+
+header a {
+  text-decoration: none;
+  border: solid 1px white;
+  color:white;
+  padding: 10px 40px;
+  border-radius: 50px;
 }
 
 /* regole main */
@@ -27,6 +40,11 @@ nav {
   margin-left: 226px;
   height: 50px;
   background-color: green;
+}
+
+nav ul {
+  display: flex;
+
 }
 
 /* regole aside */
@@ -45,11 +63,16 @@ aside {
   background-color: cyan;
 }
 
-.container div {
-  height: 140px;
+.brani {
+  height: 330px;
   background-color: purple;
   margin-top: 10px;
   margin-left: 225px;
+  display: flex;
+}
+
+.brano img {
+  height: 160px;
 }
 
 /* regole comandi */
@@ -57,7 +80,7 @@ aside {
   position: fixed;
   bottom: 0;
   left: 0;
-  height: 100px;
+  height: 90px;
   width: 100%;
   background-color: orange;
 }
