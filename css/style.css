@@ -1,0 +1,62 @@
+/* regole generali */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 1px solid black;
+}
+
+/* regole header */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100px;
+  width: 100%;
+  background-color: yellow;
+  margin-left: 229px;
+}
+
+/* regole main */
+
+
+/* regole nav */
+nav {
+  margin-top: 95px;
+  margin-left: 226px;
+  height: 50px;
+  background-color: green;
+}
+
+/* regole aside */
+aside {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 230px;
+  background-color: red;
+}
+
+/* regole container */
+.container {
+  height: 100vh;
+  background-color: cyan;
+}
+
+.container div {
+  height: 140px;
+  background-color: purple;
+  margin-top: 10px;
+  margin-left: 225px;
+}
+
+/* regole comandi */
+.comandi {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 100px;
+  width: 100%;
+  background-color: orange;
+}
