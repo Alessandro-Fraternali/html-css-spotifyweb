@@ -9,11 +9,6 @@
 body {
   background-color: #141922;
 }
-
-#grigi {
-  color: red;
-}
-
 /* regole main */
 
 
@@ -42,7 +37,11 @@ aside {
 }
 
 .spazioalto {
-  line-height: 33px;
+  line-height: 35px;
+}
+
+.spazioalto2 {
+  margin-top: 30px;
 }
 
 /* primo blocco aside */
@@ -55,6 +54,12 @@ aside {
 .hcl li {
   display: flex;
   align-items: center;
+  padding-left: 15px;
+  margin-left: -15px;
+}
+
+.hlc li:hover {
+  border-left: 2px solid  #00ff00;
 }
 
 .hcl li img {
@@ -64,6 +69,7 @@ aside {
 /* secondo blocco aside */
 .playlist {
   display: inline-block;
+  margin-top: 20px;
 }
 
 .plus {
@@ -76,10 +82,6 @@ aside {
 #scrolla {
   height: 65%;
   overflow-y: scroll;
-}
-
-#scrolla li {
-
 }
 
 #righina {
@@ -126,9 +128,13 @@ nav {
 
 nav ul {
   display: flex;
-  justify-content: space-evenly;  
+  justify-content: space-evenly;
   list-style-type: none;
   flex-wrap: wrap;
+}
+
+nav li:hover {
+  border-bottom: 2px solid #00ff00;
 }
 
 /* regole container */
@@ -138,8 +144,8 @@ nav ul {
   margin-left: 225px;
 }
 
-.container h2, .container p {
-  margin-left: 10px;
+.container h2, .pspazio {
+  margin-left: 20px;
 }
 
 .brani1, .brani2, .brani3 {
@@ -168,6 +174,10 @@ nav ul {
 .brano img {
   max-width: 160px;
   min-width: 100px;
+}
+
+.stondati {
+  border-radius: 100px;
 }
 
 /* regole player */
@@ -246,6 +256,11 @@ nav ul {
 
 .tempo {
   display: inline-block;
+}
+
+#barra {
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 /* terzo blocco player */
