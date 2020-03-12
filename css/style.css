@@ -86,8 +86,8 @@ nav ul {
 
 /* regole container */
 .container {
-  height: 100vh;
-  width: calc(100vw - 230px);
+  height: calc(100vh + 200px);
+  width: calc(100vw - 250px);
   margin-left: 225px;
 }
 
@@ -125,6 +125,7 @@ nav ul {
 .player {
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 
 /* primo blocco player */
@@ -147,6 +148,14 @@ nav ul {
 }
 
 /* secondo blocco player */
+.tasti {
+  align-content: center;
+}
 
+.esecuzione {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 /* terzo blocco player */
