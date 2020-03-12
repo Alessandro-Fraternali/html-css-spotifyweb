@@ -4,37 +4,32 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/style.css">
     <title>Boolify</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
   </head>
   <body>
-
-    <header>
-      <a href="#">EFFETTUA L'UPGRADE</a>
-    </header>
-
-    <main>
-
       <!-- aside menu laterale -->
+    <main>
       <aside>
         <div class="logospo">
           <img src="img/logo.png" alt="">
         </div>
-        <div class="hcl">
+        <div class="hcl spazioalto">
           <ul>
-            <li>Home</li>
-            <li>Cerca</li>
-            <li>Libreria</li>
+            <li><img src="img/casetta.png" alt=""><span>Home</span>  </li>
+            <li><img src="img/lente.png" alt=""><span>Cerca</span></li>
+            <li><img src="img/raccolta.png" alt=""><span>Libreria</span></li>
           </ul>
         </div>
-        <div class="">
+        <div class="spazioalto">
           <h3>Playlist</h3>
-          <div class="playlist">
+          <div class="playlist plus">
             +
           </div>
-          <span>
+          <div class="playlist">
             Crea Playlist
-          </span>
-          <ul id="scrolla">
+          </div>
+          <ul id="scrolla" class="spazioalto">
             <li>Nome Playlist</li>
             <li>Nome Playlist</li>
             <li>Nome Playlist</li>
@@ -45,14 +40,19 @@
           </ul>
         </div>
       <div class="">
+        <span>installa l'app</span>
+        <hr id="righina">
         img Gino Panino
       </div>
     </aside>
 
       <!-- nav -->
+      <div class="upgrade">
+        <a href="#">EFFETTUA L'UPGRADE</a>
+      </div>
       <nav>
         <div class="spazietto"></div>
-        <ul>
+        <ul id"grigi">
           <li>IN EVIDENZA</li>
           <li>PODCAST</li>
           <li>CLASSIFICHE</li>
@@ -74,43 +74,43 @@
           <div class="brano">
             <img src="img/metal.jpg" alt="">
             <h3>Metallica</h3>
-            <p>scemochilegge</p>
+            <p id"grigi">scemochilegge</p>
           </div>
 
           <div class="brano">
             <img src="img/metal.jpg" alt="">
             <h3>Metallica</h3>
-            <p>scemochilegge</p>
+            <p id"grigi">scemochilegge</p>
           </div>
 
           <div class="brano">
             <img src="img/metal.jpg" alt="">
             <h3>Metallica</h3>
-            <p>scemochilegge</p>
+            <p id"grigi">scemochilegge</p>
           </div>
           <div class="brano">
             <img src="img/metal.jpg" alt="">
             <h3>Metallica</h3>
-            <p>scemochilegge</p>
-          </div>
-
-          <div class="brano">
-            <img src="img/metal.jpg" alt="">
-            <h3>Metallica</h3>
-            <p>scemochilegge</p>
+            <p id"grigi">scemochilegge</p>
           </div>
 
           <div class="brano">
             <img src="img/metal.jpg" alt="">
             <h3>Metallica</h3>
-            <p>scemochilegge</p>
+            <p id"grigi">scemochilegge</p>
+          </div>
+
+          <div class="brano">
+            <img src="img/metal.jpg" alt="">
+            <h3>Metallica</h3>
+            <p id"grigi">scemochilegge</p>
           </div>
         </div>
 
         <!-- secondo blocco -->
         <div class="">
           <h2>Creato per te</h2>
-          <p>Più ascolti, più accurati saranno i suggerimenti.</p>
+          <p id"grigi">Più ascolti, più accurati saranno i suggerimenti.</p>
         </div>
         <div class="brani2">
           <div class="brano">
@@ -127,7 +127,7 @@
         <!-- terzo blocco -->
         <div class="">
           <h2>Artisti più popolari</h2>
-          <p>Più ascolti, più accurati saranno i suggerimenti.</p>
+          <p id"grigi">Più ascolti, più accurati saranno i suggerimenti.</p>
         </div>
         <div class="brani3">
           <div class="brano">
@@ -141,44 +141,44 @@
           </div>
         </div>
       </div>
+    </main>
 
-      <!-- comandi del player -->
-      <div class="player">
-        <div class="info">
-          <div id="miniatura">
-            <img src="img/metal.jpg" alt="">
-          </div>
-          <div class="nomi">
-            <a href="#">Titolo</a>
-            <p>Nome band</p>
-          </div>
-          <div class="icone">
-            cuore
-            cartella
-          </div>
+    <!-- comandi del player -->
+    <div class="player">
+      <div class="info">
+        <div id="miniatura">
+          <img src="img/metal.jpg" alt="">
         </div>
-        <div class="tasti">
-          <div class="comandi">
-            casuale
-            indietro
-            play
-            avanti
-            ripeti
-          </div>
-          <div class="esecuzione">
-            tempo
-            barra
-            durata
-          </div>
+        <div class="nomi">
+          <a href="#">Titolo</a>
+          <p>Nome band</p>
         </div>
-        <div class="opzioni">
-          menu
-          intero
-          volume
-          barra
+        <div class="icone">
+          <i class="far fa-heart"></i>
+          <i class="far fa-folder"></i>
         </div>
       </div>
-    </main>
+      <div class="tasti">
+        <div class="comandi">
+          <i class="fas fa-random" id="random"></i>
+          <i class="fas fa-caret-left"></i>
+          <i class="far fa-play-circle"></i>
+          <i class="fas fa-caret-right"></i>
+          <i class="fas fa-redo" id="repeat"></i>
+        </div>
+        <div class="esecuzione">
+          <h5 class"tempo">0:25</h5>
+          <img src="img/barra.png" alt="" class"tempo">
+          <h5 class"tempo">4:35</h5>
+        </div>
+      </div>
+      <div class="opzioni">
+        <i class="fas fa-bars"></i>
+        <i class="fas fa-desktop"></i>
+        <i class="fas fa-volume-down"></i>
+        <img src="img/barra2.png" alt="">
+      </div>
+    </div>
 
   </body>
 </html>

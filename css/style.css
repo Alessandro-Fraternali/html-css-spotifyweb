@@ -3,7 +3,6 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  border: 1px solid black;
   color: white;
 }
 
@@ -11,8 +10,91 @@ body {
   background-color: #141922;
 }
 
-/* regole header */
-header {
+#grigi {
+  color: red;
+}
+
+/* regole main */
+
+
+/* regole generali aside e logo */
+aside {
+  height: calc(100vh - 90px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 230px;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  padding-left: 15px;
+}
+
+.logospo {
+  display: flex;
+  height: 80px;
+  justify-content: center;
+  align-items: center;
+}
+
+.logospo img{
+  height: 40px;
+}
+
+.spazioalto {
+  line-height: 33px;
+}
+
+/* primo blocco aside */
+
+.hcl {
+  display: flex;
+  flex-direction: column;
+}
+
+.hcl li {
+  display: flex;
+  align-items: center;
+}
+
+.hcl li img {
+  margin-right: 8px;
+}
+
+/* secondo blocco aside */
+.playlist {
+  display: inline-block;
+}
+
+.plus {
+  padding: 4px 16px;
+  background-color: white;
+  color: black;
+  font-size: 20px;
+}
+
+#scrolla {
+  height: 65%;
+  overflow-y: scroll;
+}
+
+#scrolla li {
+
+}
+
+#righina {
+  background-color: white;
+  height: 1px;
+  border: 0;
+  margin-right: 30px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+/* regole supercontainer */
+
+/* regole upgrade */
+.upgrade {
   position: fixed;
   top: 0;
   left: 0;
@@ -27,7 +109,7 @@ header {
   padding-right: 50px;
 }
 
-header a {
+.upgrade a {
   text-decoration: none;
   border: solid 1px white;
   border-radius: 50px;
@@ -35,58 +117,18 @@ header a {
   height: 40px!important;
 }
 
-/* regole main */
-
-/* regole aside */
-aside {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 230px;
-  background-color: black;
-  display: flex;
-  flex-direction: column;
-}
-
-.logospo {
-  display: flex;
-  height: 80px;
-  justify-content: center;
-  align-items: center;
-}
-
-.logospo img{
-  height: 40px;
-}
-
-.hcl {
-  display: flex;
-  flex-direction: column;
-}
-
-#scrolla {
-  height: 50%;
-  overflow-y: scroll;
-}
-
 /* regole nav */
 nav {
   margin-top: 95px;
   margin-left: 226px;
-  background-color: green;
+  margin-bottom: 30px;
 }
 
 nav ul {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;  
   list-style-type: none;
   flex-wrap: wrap;
-}
-
-.spazietto {
-  width: 150px;
-  height: auto;
 }
 
 /* regole container */
@@ -94,16 +136,19 @@ nav ul {
   height: calc(100vh + 200px);
   width: calc(100vw - 250px);
   margin-left: 225px;
-  background-color: yellow;
+}
+
+.container h2, .container p {
+  margin-left: 10px;
 }
 
 .brani1, .brani2, .brani3 {
-  background-color: purple;
   margin-top: 10px;
   display: flex;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  margin-bottom: 20px;
 }
 
 .brani1 {
@@ -112,11 +157,17 @@ nav ul {
 
 .brani2, .brani3 {
   flex-basis: calc(100% / 2);
-  max-width: 600px;
+  max-width: 400px;
+}
+
+.brano {
+  display: flex;
+  flex-direction: column;
 }
 
 .brano img {
-  height: 160px;
+  max-width: 160px;
+  min-width: 100px;
 }
 
 /* regole player */
@@ -140,8 +191,12 @@ nav ul {
   display: flex;
 }
 
+#miniatura, .nomi {
+  margin-right: 20px;
+}
+
 #miniatura img {
-  height: 45px;
+  height: 50px;
 }
 
 .nomi a{
@@ -154,6 +209,15 @@ nav ul {
   color: gray;
 }
 
+.icone {
+  display: flex;
+  align-items: center;
+}
+
+.icone i {
+  margin-right: 18px;
+}
+
 /* secondo blocco player */
 .tasti {
   align-content: center;
@@ -161,8 +225,31 @@ nav ul {
 
 .esecuzione {
   display: flex;
-  flex-direction: column;
   align-items: center;
 }
 
+.comandi {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.comandi i {
+  margin-right: 30px;
+  border: 0;
+  font-size: 30px;
+}
+
+#random, #repeat {
+  font-size: 20px;
+}
+
+.tempo {
+  display: inline-block;
+}
+
 /* terzo blocco player */
+
+.opzioni i {
+  margin-right: 10px;
+}
