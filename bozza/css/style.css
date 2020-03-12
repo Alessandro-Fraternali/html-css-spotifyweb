@@ -1,0 +1,301 @@
+/* regole generali */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+body {
+  background-color: #141922;
+}
+/* regole main */
+
+
+/* regole generali aside e logo */
+aside {
+  height: calc(100vh - 90px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 230px;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  padding-left: 15px;
+}
+
+.logospo {
+  display: flex;
+  height: 80px;
+  justify-content: center;
+  align-items: center;
+}
+
+.logospo img{
+  height: 40px;
+}
+
+.spazioalto {
+  line-height: 30px;
+}
+
+.spazioalto2 {
+  margin-top: 30px;
+}
+
+/* primo blocco aside */
+.hcl {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5px;
+}
+
+.hcl li {
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+  margin-left: -15px;
+}
+
+.hcl li img {
+  height: 30px;
+}
+
+.hcl li img {
+  margin-right: 8px;
+}
+
+.hcl li:hover {
+  border-left: 2px solid  #00ff00;
+}
+
+/* secondo blocco aside */
+.playlist {
+  display: inline-block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.plus {
+  padding: 4px 10px;
+  background-color: white;
+  color: black;
+  font-size: 20px;
+}
+
+#scrolla {
+  height: 65%;
+  overflow-y: scroll;
+}
+
+/* terzo blocco aside */
+#righina {
+  background-color: white;
+  height: 1px;
+  border: 0;
+  margin-right: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.profilo img{
+  width: 30px;
+}
+
+/* regole mediaquery aside */
+@media screen and (max-width: 600px) {
+  .grande {
+    display: none;
+  }
+
+  .piccolo {
+    display: inline-block;
+  }
+
+  .container {
+    width: 100vw;
+    background-color: red;
+    margin-left: 0;
+  }
+}
+
+/* regole upgrade */
+.upgrade {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 90px;
+  width: calc(100vw - 230px);
+  background-color: rgb(12, 15, 20);
+  margin-left: 229px;
+  opacity: 0.7;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 50px;
+}
+
+.upgrade a {
+  text-decoration: none;
+  border: solid 1px white;
+  border-radius: 50px;
+  padding: 9px 30px;
+  height: 40px!important;
+}
+
+/* regole nav */
+nav {
+  margin-top: 95px;
+  margin-left: 226px;
+  margin-bottom: 30px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+  flex-wrap: wrap;
+}
+
+nav li:hover {
+  border-bottom: 2px solid #00ff00;
+}
+
+/* regole container */
+.container {
+  height: calc(100vh + 400px);
+  width: calc(100vw - 250px);
+  margin-left: 235px;
+}
+
+.container h2, .pspazio {
+  margin-left: 20px;
+}
+
+.brani1, .brani2, .brani3 {
+  margin-top: 10px;
+  display: flex;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 60px;
+}
+
+h3 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.brani1 {
+  flex-basis: calc(100% / 6);
+}
+
+.brani2, .brani3 {
+  flex-basis: calc(100% / 2);
+  max-width: 400px;
+}
+
+.brano {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.brano img {
+  max-width: 160px;
+  min-width: 100px;
+}
+
+.stondati {
+  border-radius: 100px;
+}
+
+/* regole player */
+.player {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 90px;
+  width: 100vw;
+  background-color: #262626;
+}
+
+.player {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* primo blocco player */
+.info {
+  display: flex;
+}
+
+#miniatura, .nomi {
+  margin-right: 20px;
+}
+
+#miniatura img {
+  height: 50px;
+}
+
+.nomi a{
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nomi p {
+  font-size: 15px;
+  color: gray;
+}
+
+.icone {
+  display: flex;
+  align-items: center;
+}
+
+.icone i {
+  margin-right: 18px;
+}
+
+/* secondo blocco player */
+.tasti {
+  align-content: center;
+}
+
+.esecuzione {
+  display: flex;
+  align-items: center;
+}
+
+.comandi {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.comandi i {
+  margin-right: 30px;
+  border: 0;
+  font-size: 30px;
+}
+
+#random, #repeat {
+  font-size: 20px;
+}
+
+.tempo {
+  display: inline-block;
+}
+
+#barra {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/* terzo blocco player */
+
+.opzioni i {
+  margin-right: 10px;
+}
