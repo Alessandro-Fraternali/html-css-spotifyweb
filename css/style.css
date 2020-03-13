@@ -6,25 +6,25 @@
   color: white;
 }
 
-.clearfix::after {
+.clearfix:after {
   content: "";
   display: table;
   clear: both;
 }
 
 body {
-  background-color: #141922;
 }
 
 /* regole main */
 
 /* regole container */
 
-.supercontainer {
-
+.container {
+  height: 100vh;
+  background-color: pink;
 }
 
-.container {
+.destro {
   float: right;
   width: 83%;
 }
@@ -34,8 +34,7 @@ body {
 .layover {
   position: fixed;
   top: 0;
-  left: 0;
-  margin-left: 17%;
+  right: 0;
   width: 83%;
   height: 90px;
   background-color: rgb(12, 15, 20);
@@ -55,6 +54,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 100%;
 }
 
 .elenco ul {
@@ -89,11 +89,10 @@ body {
   justify-content: space-around;
 }
 
-.riga2 {
+.riga2, .riga3 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin-top: 50px;
 }
 
 .categoria {
@@ -132,7 +131,7 @@ body {
   background-color: black;
   float: left;
   width: 17%;
-  height: 100vh;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -166,7 +165,7 @@ body {
 /* regole mediaquery nav */
 
 @media screen and (max-width: 600px) {
-  .container {
+  .destro {
     width: 90%;
   }
   .layover {
@@ -184,6 +183,9 @@ body {
   }
   .blocco-icone-1 {
     height: 55%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .blocco-icone-1 img {
     display: block;
