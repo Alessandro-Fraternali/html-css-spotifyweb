@@ -23,7 +23,10 @@ body {
 .container {
   float: right;
   width: 83%;
-  height: calc(100vh - 90px);
+}
+
+.supercontainer {
+  height: 100%;
 }
 
 /* regole layover */
@@ -49,7 +52,6 @@ body {
   margin-top: 110px;
   margin-bottom: 80px;
   width: 100%;
-  border: 1px solid red;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -64,6 +66,7 @@ body {
 }
 
 .elenco li {
+  margin-right: 15px;
 }
 
 .elenco li:hover {
@@ -76,6 +79,30 @@ body {
 .vetrina {
   display: flex;
   justify-content: center;
+}
+
+.riga1 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 80px;
+}
+
+.riga2 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 80px;
+}
+
+.riga3 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 80px;
+}
+
+.categoria {
+  background-color: orange;
+  margin-left: 60px;
+  margin-bottom: 30px;
 }
 
 .brano {
@@ -101,14 +128,14 @@ body {
   display: none;
   float: left;
   width: 10%;
-  height: calc(100vh - 90px);
+  height: 100vh;
 }
 
 #navgrande {
   background-color: black;
   float: left;
   width: 17%;
-  height: calc(100vh - 90px);
+  height: 100vh!important;
 }
 
 .logo {
