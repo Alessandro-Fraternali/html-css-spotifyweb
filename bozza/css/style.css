@@ -54,9 +54,6 @@ aside {
 .hcl li {
   display: flex;
   align-items: center;
-  padding-left: 15px;
-  margin-left: -15px;
-}
 
 .hcl li img {
   height: 30px;
