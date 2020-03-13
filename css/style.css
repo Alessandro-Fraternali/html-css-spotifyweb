@@ -20,13 +20,13 @@ body {
 
 /* regole container */
 
+.supercontainer {
+
+}
+
 .container {
   float: right;
   width: 83%;
-}
-
-.supercontainer {
-  height: 100%;
 }
 
 /* regole layover */
@@ -78,30 +78,27 @@ body {
 
 .vetrina {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-left: 55px;
 }
 
 .riga1 {
   display: flex;
-  justify-content: center;
-  margin-bottom: 80px;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .riga2 {
   display: flex;
-  justify-content: center;
-  margin-bottom: 80px;
-}
-
-.riga3 {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 80px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 50px;
 }
 
 .categoria {
   background-color: orange;
-  margin-left: 60px;
+  margin-left: 55px;
   margin-bottom: 30px;
 }
 
@@ -135,7 +132,11 @@ body {
   background-color: black;
   float: left;
   width: 17%;
-  height: 100vh!important;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
 }
 
 .logo {
@@ -176,8 +177,10 @@ body {
     display: none;
   }
   #navpiccolo {
-    display: inline-block;
     background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
   .blocco-icone-1 {
     height: 55%;
@@ -191,11 +194,15 @@ body {
     height: 30px;
   }
   .blocco-icone-2 {
-    height: 20%;
+    height: 170px;
     border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .blocco-icone-2 i {
     font-size: 14px;
+    margin-bottom: 10px;
   }
   .blocco-icone-2 img {
     display: block;
