@@ -54,6 +54,7 @@ strong {
   float: right;
   width: calc(100% - 232px);
   overflow: auto;
+
 }
 
 /* regole layover */
@@ -61,8 +62,8 @@ strong {
 .layover {
   position: fixed;
   top: 0;
-  right: 0;
-  width: calc(100vw - 231.5px);
+  right: 17px;
+  width: calc(100vw - 249px);
   height: 90px;
   background-color: rgb(12, 15, 20);
   opacity: 0.7;
@@ -74,10 +75,15 @@ strong {
 
 .layover a {
   text-decoration: none;
-  border: solid 1px white;
+  border: solid 1px gray;
   border-radius: 50px;
   padding: 9px 30px;
-  height: 40px!important;
+  color:gray;
+}
+
+.layover a:hover {
+  color: white;
+  border: solid 1px white;
 }
 
 /* regole elenco */
@@ -87,7 +93,6 @@ strong {
   margin-bottom: 20px;
   width: 100%;
   display: flex;
-  align-items: center;
   justify-content: center;
 }
 
@@ -96,7 +101,6 @@ strong {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-
 }
 
 .elenco li {
@@ -105,6 +109,7 @@ strong {
 
 .elenco li:hover {
   border-bottom: 2px solid #00ff00;
+  color: white;
 }
 
 
@@ -112,7 +117,6 @@ strong {
 
 .vetrina {
   display: flex;
-  justify-content: flex-start;
   flex-wrap: wrap;
   margin-left: 55px;
 }
@@ -126,7 +130,6 @@ strong {
 .riga2, .riga3 {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
 }
 
 .riga3 img{
@@ -181,8 +184,13 @@ strong {
   flex-direction: column;
   justify-content: space-between;
   padding-left: 10px;
-
 }
+
+#navgrande li:hover, #navgrande p:hover {
+  color: white;
+}
+
+#navgrande
 
 /* logo */
 
@@ -194,7 +202,7 @@ strong {
 }
 
 .logo img{
-  width: 150px;
+  width: 130px;
 }
 
 /* strumenti */
@@ -202,7 +210,6 @@ strong {
 .strumenti {
   display: flex;
   flex-direction: column;
-  margin-bottom: 5px;
 }
 
 .strumenti li {
@@ -289,6 +296,7 @@ strong {
   .layover {
     width: 90%;
     margin-left: 10%;
+    right: 0;
   }
   #navgrande {
     display: none;
@@ -338,9 +346,6 @@ strong {
 .player {
   height: 90px;
   width: 100%;
-  position: fixed;
-  bottom: 0;
-  left: 0;
   position: fixed;
   bottom: 0;
   left: 0;
@@ -419,6 +424,11 @@ strong {
 }
 
 /* terzo blocco player */
+
+.opzioni {
+  display: flex;
+  align-items: center;
+}
 
 .opzioni i {
   margin-right: 10px;
