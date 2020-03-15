@@ -155,7 +155,7 @@ strong {
 }
 
 .brano img {
-  width: 150px;
+  width: 155px;
 }
 
 .titolo {
@@ -164,6 +164,12 @@ strong {
 
 .album {
   width: 150px;
+}
+
+.centratesti {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* regole nav */
@@ -243,9 +249,17 @@ strong {
 
 .plus {
   padding: 4px 10px;
-  background-color: white;
+  background-color: gray;
   color: black;
   font-size: 20px;
+}
+
+.bloccolist:hover .plus{
+  background-color: white;
+}
+
+.bloccolist:hover p{
+  color: white;
 }
 
 #scrolla {
